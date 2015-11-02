@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexErik = /^\/erip/;
       botRegexHunter=/^\/hunter/;  botRegextm = /^\/team/i;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
-      botRegexgf = /^\/gf/;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; 
+      botRegexgf = /^\/gf/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -54,9 +54,9 @@ function respond() {
     this.res.end();
   }  
 
-  else if(request.text && botRegexTw.test(request.text)) {
+  else if(request.text && botRegexfrenk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
+    postMessage("http://i.groupme.com/852x568.gif.5e8ba1219aff46ee893025e002005e90.large");
     this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
