@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexSalt = /^\/salt/;botRegexYub = /^\/yubnub/
+      botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexYub = /^\/yubnub/
       botRegexAd=/^\/advance/;  botRegextm = /^\/team/i;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -21,9 +21,9 @@ function respond() {
     postMessage("http://daddyleagues.com/lul");
     this.res.end();
   } 
-  else if(request.text && botRegexSalt.test(request.text)) {
+  else if(request.text && botRegexDP.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("https://www.youtube.com/watch?v=FyKWUTwSYAs");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
