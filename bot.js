@@ -82,7 +82,7 @@ function respond() {
   } 
   else if(request.text && botzez.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Faggot not even worth a command");
+    postMessage("Zeks a real no-dick fag");
     this.res.end();
   }
   else if(request.text && botRegexcee.test(request.text)) {
