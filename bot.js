@@ -83,12 +83,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("Go Browns");
     this.res.end();
-  }
-  else if(request.text && boterik.test(request.text)) {
-this.res.writeHead(200);
-postMessage("http://i.imgur.com/eIoeHgP.jpg");
-this.res.end();
-  }
+  
   
   }
   else {
