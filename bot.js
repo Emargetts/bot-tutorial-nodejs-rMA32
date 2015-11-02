@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/dl/;botRegexSalt = /^\/salt/;botRegexYub = /^\/yubnub/
-      botRegexAd=/^\/advance/;  botRegextm = /^\/team/i;  botRegexSC = /^\/SDL/i; botODB = /^\odb/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;  botRegextm = /^\/team/i;  botRegexSC = /^\/SDL/i; botWilly = /^\/willypls/; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -74,9 +74,9 @@ function respond() {
     postMessage("https://docs.google.com/spreadsheets/d/1Eujxou2T1ABJbjXVlK97OllHBUCANBvvG2S0Zh2Mwys/edit?usp=sharing");
     this.res.end();
   } 
-  else if(request.text && botODB.test(request.text)) {
+  else if(request.text && botWilly.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("OBJ*");
+    postMessage(".mfw");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
