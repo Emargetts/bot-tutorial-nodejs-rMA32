@@ -8,7 +8,6 @@ function respond() {
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexErik = /^\/erip/;
       botRegexAd=/^\/advance/;  botRegextm = /^\/team/i;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
       botRegexgf = /^\/gf/;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; 
-      botRegexfrenk = /^\/frenk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -84,11 +83,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("Go Browns");
     this.res.end();
-  }
-  else if(request.text && botfrenk.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/1aEXDh9.png");
-    this.res.end();
+  
   
   }
   else {
