@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexErik = /^\/erip/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
-      botRegexgf = /^\/gf/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; 
+      botRegexgf = /^\/gf/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; botRegexcee = /^\/cb/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -82,6 +82,11 @@ function respond() {
   else if(request.text && botzez.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Go Browns");
+    this.res.end();
+  }
+  else if(request.text && botRegexcee.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/6PmT6Bj.jpg");
     this.res.end();
   
   
