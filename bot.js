@@ -77,7 +77,7 @@ function respond() {
   } 
   else if(request.text && botWilly.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(".mfw");
+    postMessage("Fuck Willy");
     this.res.end();
   } 
   else if(request.text && botzez.test(request.text)) {
