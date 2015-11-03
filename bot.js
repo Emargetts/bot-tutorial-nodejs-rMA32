@@ -125,12 +125,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("mfw go bruhs");
     this.res.end();  
-  }  
-  else if(request.text && botdil.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/rzcnYPX.jpg);
-    this.res.end();  
-    
+ 
   }
   else {
     console.log("don't care");
