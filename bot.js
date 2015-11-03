@@ -58,7 +58,7 @@ function respond() {
 
   else if(request.text && botRegexfrenk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.groupme.com/852x568.gif.5e8ba1219aff46ee893025e002005e90.large");
+    postMessage("http://i.imgur.com/7LzOUXd.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
