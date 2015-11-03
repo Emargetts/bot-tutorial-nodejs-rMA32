@@ -128,8 +128,9 @@ function respond() {
   }  
   else if(request.text && botdil.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.groupme.com/1440x424.png.adc1c1f640c947a69c23cfecb8bee038.large);
+    postMessage("http://i.imgur.com/rzcnYPX.jpg);
     this.res.end();  
+    
   }
   else {
     console.log("don't care");
