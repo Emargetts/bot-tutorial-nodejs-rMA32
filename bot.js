@@ -9,7 +9,7 @@ function respond() {
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
       botRegexgf = /^\/gf/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; botRegexcee = /^\/cb/;
       bothelp = /^\/help/;  botdavid = /^\/david/;  botham = /^\/ham/;  botconnor = /^\/connor/;  botfrem = /^\/frem/;
-      botalex = /^\/alex/;  botbruh = /^\/bruh/;  botsuj = /^\/suj/;  botsig = /^\/sig/;
+      botalex = /^\/alex/;  botbruh = /^\/bruh/;  botsuj = /^\/suj/;  botsig = /^\/sig/;  botbob = /^\/bobross/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -134,6 +134,11 @@ function respond() {
   else if(request.text && botsig.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.youtube.com/watch?v=Pfz4JViRkoA");
+    this.res.end();  
+  }  
+  else if(request.text && botbob.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/xCRZ6om.jpg?1");
     this.res.end();  
   }
   else {
