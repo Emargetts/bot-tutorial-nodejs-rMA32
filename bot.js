@@ -98,7 +98,7 @@ function respond() {
   }  
   else if(request.text && botStreams.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("(https://www.twitch.tv/crazyknightss [Erik],  https://www.twitch.tv/hardfluff [Liam],  https://www.twitch.tv/skarmotastic  [OKC],  http://www.twitch.tv/steventwerkel [Steve])");
+    postMessage("(https://www.twitch.tv/crazyknightss [Erik],  https://www.twitch.tv/hardfluff [Liam],  https://www.twitch.tv/skarmotastic  [OKC],  http://www.twitch.tv/steventwerkel [Steve], https://www.twitch.tv/bp323 [Sig])");
     this.res.end();
   }  
   else if(request.text && botham.test(request.text)) {
