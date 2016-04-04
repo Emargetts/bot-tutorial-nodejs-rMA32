@@ -108,7 +108,7 @@ function respond() {
   }  
   else if(request.text && botRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1mBtjXKQ4Rb8Qcd0Q4bO7IbWLTJbQd4eEi7sA5lJTkQc/edit");
+    postMessage("https://docs.google.com/document/d/1mBtjXKQ4Rb8Qcd0Q4bO7IbWLTJbQd4eEi7sA5lJTkQc/edit?usp=sharing");
     this.res.end();  
   }  
   else if(request.text && botfrem.test(request.text)) {
