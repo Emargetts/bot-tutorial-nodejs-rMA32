@@ -63,7 +63,7 @@ function respond() {
   } 
   else if(request.text && botRegexCom.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("(/schedule,/teams,/dl)");
+    postMessage("(/schedule,/teams,/dl,/rules)");
     this.res.end();
   } 
   else if(request.text && botRegexhose.test(request.text)) {
