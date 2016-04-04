@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
-      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/subinactive/; botRegexhose = /^\/hose.jpginactive/; botRegexWk = /^\/usersinactive/; botRegexcee = /^\/cbinactive/;
+      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botRegexWk = /^\/usersinactive/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botdavid = /^\/davidinactive/;  botham = /^\/haminactive/;  botconnor = /^\/connorinactive/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -61,9 +61,9 @@ function respond() {
     postMessage("http://i.imgur.com/7LzOUXd.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexSb.test(request.text)) {
+  else if(request.text && botRegexCom.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/lockupleague");
+    postMessage("(/schedule,/teams,/dl)");
     this.res.end();
   } 
   else if(request.text && botRegexhose.test(request.text)) {
