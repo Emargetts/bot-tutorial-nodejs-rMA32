@@ -8,7 +8,7 @@ function respond() {
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botRegexWk = /^\/usersinactive/; botRegexcee = /^\/cbinactive/;
-      bothelp = /^\/help/;  botdavid = /^\/davidinactive/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
+      bothelp = /^\/help/;  botStreams = /^\/streams/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -96,9 +96,9 @@ function respond() {
     postMessage("No");
     this.res.end();
   }  
-  else if(request.text && botdavid.test(request.text)) {
+  else if(request.text && botStreams.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/eL0zpq5.jpg");
+    postMessage("(https://www.twitch.tv/crazyknightss,https://www.twitch.tv/hardfluff,https://www.twitch.tv/skarmotastic)");
     this.res.end();
   }  
   else if(request.text && botham.test(request.text)) {
