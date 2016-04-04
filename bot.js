@@ -5,11 +5,11 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexErik = /^\/erip/;
-      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexSC = /^\/SDL/i; botWilly = /^\/willy/; botzez = /^\/zez/;
-      botRegexgf = /^\/gf/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/sub/; botRegexhose = /^\/hose.jpg/; botRegexWk = /^\/users/; botRegexcee = /^\/cb/;
-      bothelp = /^\/help/;  botdavid = /^\/david/;  botham = /^\/ham/;  botconnor = /^\/connor/;  botfrem = /^\/frem/;
-      botalex = /^\/alex/;  botbruh = /^\/bruh/;  botsuj = /^\/suj/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
+      botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
+      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/Teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
+      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexSb = /^\/subinactive/; botRegexhose = /^\/hose.jpginactive/; botRegexWk = /^\/usersinactive/; botRegexcee = /^\/cbinactive/;
+      bothelp = /^\/help/;  botdavid = /^\/davidinactive/;  botham = /^\/haminactive/;  botconnor = /^\/connorinactive/;  botfrem = /^\/frem/;
+      botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -20,7 +20,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/lul");
+    postMessage("http://daddyleagues.com/theml");
     this.res.end();
   } 
   else if(request.text && botRegexDP.test(request.text)) {
@@ -33,9 +33,9 @@ function respond() {
     postMessage("http://i.imgur.com/EaAqlv1.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexErik.test(request.text)) {
+  else if(request.text && botRegexRost.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/eIoeHgP.jpg");
+    postMessage("https://docs.google.com/document/d/1ypnpIGSpzR7Dnrco63lUpWN5l2npUlhQItxC4Eu5wE0/edit");
     this.res.end();
   } 
   else if(request.text && botRegexkahn.test(request.text)) {
@@ -43,9 +43,9 @@ function respond() {
     postMessage("http://i.imgur.com/v8tQPfM.png");
     this.res.end();
   } 
-  else if(request.text && botRegexSC.test(request.text)) {
+  else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/lul/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/THEML/schedules");
     this.res.end();
   }
   else if(request.text && botRegexgf.test(request.text)) {
