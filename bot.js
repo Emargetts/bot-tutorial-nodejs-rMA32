@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
-      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botRegexWk = /^\/usersinactive/; botRegexcee = /^\/cbinactive/;
+      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botAdvplsty = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -71,9 +71,9 @@ function respond() {
     postMessage("http://i.imgur.com/6iGFc55.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexWk.test(request.text)) {
+  else if(request.text && botadv.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1Eujxou2T1ABJbjXVlK97OllHBUCANBvvG2S0Zh2Mwys/edit?usp=sharing");
+    postMessage("Adv pls ty");
     this.res.end();
   } 
   else if(request.text && botWilly.test(request.text)) {
