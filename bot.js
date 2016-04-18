@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
-      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botAdvplsty = /^\/adv/; botRegexcee = /^\/cbinactive/;
+      botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
