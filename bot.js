@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
-      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botWilly = /^\/willyinactive/; botzez = /^\/zezinactive/;
+      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
@@ -76,9 +76,9 @@ function respond() {
     postMessage("Adv pls ty");
     this.res.end();
   } 
-  else if(request.text && botWilly.test(request.text)) {
+  else if(request.text && botcommish.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Fuck Willy");
+    postMessage("http://i.imgur.com/eXCWrd9.png");
     this.res.end();
   } 
   else if(request.text && botzez.test(request.text)) {
