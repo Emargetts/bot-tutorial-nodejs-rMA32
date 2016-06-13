@@ -8,7 +8,7 @@ function respond() {
       botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexfrenk = /^\/frenk/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
-      bothelp = /^\/help/;  botStreams = /^\/streams/;  botham = /^\/haminactive/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
+      bothelp = /^\/help/;  botStreams = /^\/streams/;  botm17 = /^\/m17/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruhinactive/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -101,9 +101,9 @@ function respond() {
     postMessage("(https://www.twitch.tv/crazyknightss [Erik],  https://www.twitch.tv/hardfluff [Liam],  https://www.twitch.tv/skarmotastic  [OKC],  http://www.twitch.tv/steventwerkel [Steve], https://www.twitch.tv/bp323 [Sig])");
     this.res.end();
   }  
-  else if(request.text && botham.test(request.text)) {
+  else if(request.text && botm17.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/SrELNnp.png");
+    postMessage("https://docs.google.com/spreadsheets/d/1bp1POvkMKF2TeVvzL4MjPyIGJkKXudTC7mIbRF61Pxc/edit?usp=sharing");
     this.res.end();
   }  
   else if(request.text && botRules.test(request.text)) {
