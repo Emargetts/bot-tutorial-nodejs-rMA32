@@ -9,7 +9,7 @@ function respond() {
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botliam = /^\/liam/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
-      botalex = /^\/alexinactive/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botmusik = /^\/denk/;
+      botalex = /^\/alexinactive/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botbyeweek = /^\/byeweek/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -141,9 +141,9 @@ function respond() {
     postMessage("http://i.imgur.com/xCRZ6om.jpg?1");
     this.res.end();  
   }  
-  else if(request.text && botmusik.test(request.text)) {
+  else if(request.text && botbyeweek.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/playlist?list=PLFPwGmnS_lyyVY5qjqZmHGbyr8doP0PH2");
+    postMessage("http://onwardstate.com/wp-content/uploads/2016/03/MJ-crying-Whilst-Eating-Creamery-IceCream-702x336.png");
     this.res.end();  
   }
   else {
