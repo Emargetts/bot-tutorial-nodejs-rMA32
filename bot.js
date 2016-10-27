@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexbg = /^\/bg/;  botRegexDL = /^\/dl/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
+      botRegexbg = /^\/bg/;  botRegex = /^\/same/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botliam = /^\/liam/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
@@ -18,9 +18,9 @@ function respond() {
     postMessage("http://i.imgur.com/thUZWBn.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexDL.test(request.text)) {
+  else if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/theml");
+    postMessage("cool()");
     this.res.end();
   } 
   else if(request.text && botRegexDP.test(request.text)) {
