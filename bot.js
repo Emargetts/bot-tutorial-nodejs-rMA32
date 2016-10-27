@@ -20,7 +20,7 @@ function respond() {
   } 
   else if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("cool()");
+    postMessage("same");
     this.res.end();
   } 
   else if(request.text && botRegexDP.test(request.text)) {
