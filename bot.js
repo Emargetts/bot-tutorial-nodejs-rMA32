@@ -45,7 +45,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/THEML/schedules");
+    postMessage("http://m.imgur.com/gallery/4I6Sz");
     this.res.end();
   }
   else if(request.text && botRegexgf.test(request.text)) {
