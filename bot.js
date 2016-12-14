@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegex = /^\/same/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
-      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexRost = /^\/teams/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
+      botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexDL = /^\/dl/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botliam = /^\/liam/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botalex = /^\/alexinactive/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botbyeweek = /^\/byeweek/;
@@ -33,9 +33,9 @@ function respond() {
     postMessage("http://i.imgur.com/EaAqlv1.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexRost.test(request.text)) {
+  else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1ypnpIGSpzR7Dnrco63lUpWN5l2npUlhQItxC4Eu5wE0/edit");
+    postMessage("http://daddyleagues.com/TML");
     this.res.end();
   } 
   else if(request.text && botRegexkahn.test(request.text)) {
