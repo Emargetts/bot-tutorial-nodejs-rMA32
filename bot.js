@@ -9,7 +9,7 @@ function respond() {
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexDL = /^\/dl/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
       botRegexgf = /^\/gfinactive/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botliam = /^\/liam/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
-      botalex = /^\/alexinactive/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botbyeweek = /^\/byeweek/;
+      botfwmid = /^\/fwmid/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botbyeweek = /^\/byeweek/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -116,9 +116,9 @@ function respond() {
     postMessage("http://i.imgur.com/nL8WVg8.png");
     this.res.end();
   }  
-  else if(request.text && botalex.test(request.text)) {
+  else if(request.text && botfwmid.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/q3h4kdR.jpg");
+    postMessage("http://imgur.com/CtyPukx");
     this.res.end();  
   }  
   else if(request.text && botbruh.test(request.text)) {
