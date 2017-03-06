@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexbg = /^\/bg/;  botRegex = /^\/same/;botRegexDP = /^\/dp/;botRegexSch = /^\/schedule/;
       botRegexHunter=/^\/hunter/;  botRegexkahn = /^\/kahn/;  botRegexDL = /^\/dl/; botcommish = /^\/commish/; botzez = /^\/zezinactive/;
-      botRegexgf = /^\/gfinactive/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
+      botRegexpat = /^\/pat/;  botRegexduck = /^\/duck/; botRegexCom = /^\/commands/; botRegexhose = /^\/hose.jpginactive/; botadv = /^\/adv/; botRegexcee = /^\/cbinactive/;
       bothelp = /^\/help/;  botStreams = /^\/streams/;  botliam = /^\/liam/;  botRules = /^\/rules/;  botfrem = /^\/frem/;
       botfwmid = /^\/fwmid/;  botbruh = /^\/bruh/;  botsuj = /^\/sujinactive/;  botsig = /^\/sig/;  botbob = /^\/bobross/;  botbyeweek = /^\/byeweek/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -48,11 +48,11 @@ function respond() {
     postMessage("http://daddyleagues.com/Tml/schedules");
     this.res.end();
   }
-  else if(request.text && botRegexgf.test(request.text)) {
+  else if(request.text && botRegexpat.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("Fuck EA");
+    postMessage("http://imgur.com/ea9yDyW");
     this.res.end();
   }  
 
